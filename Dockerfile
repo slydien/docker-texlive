@@ -10,7 +10,7 @@ ADD https://httpbin.org/uuid force-cache-invalidation
 RUN /usr/local/texlive/bin/x86_64-linuxmusl/tlmgr update --all
 
 FROM alpine:latest
-MAINTAINER Oliver Ford <dev@ojford.com>
+MAINTAINER Lydien Sandanasamy <slydien@icloud.com>
 
 COPY --from=base /usr/local/texlive /usr/local/texlive
 ENV INFOPATH "/usr/local/texlive/texmf-dist/doc/info:$INFOPATH"
